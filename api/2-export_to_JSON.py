@@ -4,10 +4,10 @@ Script to fetch an employee's TODO list progress using a REST API and
 export the data to CSV and JSON files.
 """
 
-import requests
-import sys
 import csv
 import json
+import requests
+import sys
 
 
 def fetch_todo_progress(employee_id):
