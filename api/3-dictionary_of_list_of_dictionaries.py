@@ -46,8 +46,5 @@ def get_all_employees_todo_data():
     with open(filename, "w", encoding="utf-8") as file:
         json.dump(tasks_by_user, file, indent=4)
 
-    print(f"Data has been exported to {filename}")
-
-
 if __name__ == "__main__":
     get_all_employees_todo_data()
