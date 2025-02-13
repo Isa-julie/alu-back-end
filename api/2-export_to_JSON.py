@@ -68,7 +68,8 @@ def fetch_todo_progress(employee_id):
 
     # Export data to JSON file
     json_filename = f"{employee_id}.json"
-    json_data = {employee_id: [{"task": task.get("title"), "completed": task.get(
+    json_data = {employee_id: [{"task": task.get("title"), 
+        "completed": task.get(
         "completed"), "username": user_data.get("username")} for task in todos]}
 
     with open(json_filename, mode='w') as json_file:
