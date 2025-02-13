@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+This module fetches all employees' TODO list data from a REST API and
+exports the data in JSON format.
+"""
+
 import json
 import requests
 
